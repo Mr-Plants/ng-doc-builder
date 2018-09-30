@@ -1,3 +1,9 @@
+/**
+ * @author weiyb
+ * @date 2018/9/30
+ * @Description: 扩展prime支持angular代码高亮，from an-design
+*/
+
 const Prism = require('node-prismjs');
 Prism.languages.angular = Prism.languages.extend('typescript', {});
 
