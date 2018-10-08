@@ -2,7 +2,7 @@
  * @author weiyb
  * @date 2018/10/1
  * @Description: 将md编译为html片段和meta信息
-*/
+ */
 const marked = require('marked');
 const fs = require('fs-extra');
 const remark = require('remark')();

@@ -10,14 +10,26 @@ const Prism = require('node-prismjs');
 const path = require('path');
 const nameWithoutSuffix = require('./utils/name-without-suffix');
 const parseMd2Html = require('./utils/parse-md2html');
+const generateDemo = require('./utils/gengeate-demo');
 
 const documentPath = path.resolve(__dirname, '../document');
+const srcPath = path.resolve(__dirname, '../src');
+const appPath = path.join(srcPath, '/app/');
 
-const temporarySrc = path.resolve(__dirname, '/src');
+const temporarySrcPath = path.resolve(__dirname, '/src');
 
 const documentDir = fs.readdirSync(documentPath);
+
+fs.removeSync(srcPath);
+console.log('拷贝源码模板...');
+fs.copySync(temporarySrcPath, srcPath);
+
+console.log('开始处理组件...');
+const componentsMap = {};
 documentDir.forEach(component => {
+    console.log('处理' + componen + '...');
     const componentDir = path.join(documentPath, component);
+    const srcComponentPath = path.join(appPath, component);
     const demoDir = fs.readdirSync(path.join(componentDir, 'demo'));
     const demoMap = {};
     demoDir.forEach(file => {
@@ -28,8 +40,16 @@ documentDir.forEach(component => {
         } else if (/.ts$/.test(file)) {
             const highlightCode = PrismAngular.highlight(demoFile, Prism.languages['angular']);
             demoMap[nameKey].highlightCode = `<pre class="language-angular"><code class="language-angular">${highlightCode}</code></pre>`
+            fs.writeFileSync(srcComponentPath, demoFile);
         }
-    })
+    });
+    const apiFile = fs.readFileSync(path.join(componentDir, '/doc/api.md'));
+    const headFile = fs.readFileSync(path.join(componentDir, '/doc/head.md'));
+    // componentsMap[component] = {
+    const data = {
+        api: parseMd2Html(apiFile),
+        head: parseMd2Html(headFile),
+        demoMap
+    };
+    generateDemo(srcComponentPath,data);
 });
-// fs.removeSync('../src');
-// fs.copySync()
