@@ -1,6 +1,6 @@
 ---
-xxx:sdd
-
+title: Input
+other: test
 ---
 
 # Input 输入框
