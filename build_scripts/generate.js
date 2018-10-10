@@ -49,9 +49,11 @@ documentDir.forEach(component => {
     const headFile = fs.readFileSync(path.join(componentDir, 'doc/head.md'));
     // componentsMap[component] = {
     const data = {
+        component,
         api: parseMd2Html(apiFile),
         head: parseMd2Html(headFile),
         demoMap
     };
     generateDemo(srcComponentPath, data);
+//    TODO 专门维护一个模块名称集合，方便路由使用
 });

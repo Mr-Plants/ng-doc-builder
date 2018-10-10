@@ -11,7 +11,7 @@ module.exports = function parseMd2Html(file) {
     const meta = yfm.loadFront(file);
     let htmlContent = '';
     const content = meta.__content;
-    delete meta.__content;   // 减少内存占用
+    delete meta.__content;   // 减少内存占用？
     const contentObject = remark.parse(content);
     contentObject.children.forEach(mdChild => {
         htmlContent += marked(remark.stringify(mdChild));
