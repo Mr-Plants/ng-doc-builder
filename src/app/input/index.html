@@ -6,47 +6,25 @@
 <li>提供组合型输入框，带搜索的输入框，还可以进行大小选择。</li>
 </ul>
 <h2 id="-">代码演示</h2>
-<nz-demo-input-basic></nz-demo-input-basic><h4 id="-">按钮类型</h4>
-<p>按钮有四种类型：主按钮、次按钮、虚线按钮、危险按钮。主按钮在同一个操作区域最多出现一次。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-basic'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Dashed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>danger<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>`</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-      <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonBasicComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-basic></nz-demo-input-basic><h4 id="-">基本使用</h4>
+<nz-demo-input-basic></nz-demo-input-basic><h4 id="-">基本使用</h4>
 <p>基本使用。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-basic'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">nz-input</span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Basic usage<span class="token punctuation">"</span></span> <span class="token attr-name">[(ngModel)]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>value<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   `</span></span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputBasicComponent</span> <span class="token punctuation">{</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputBasicComponent</span> <span class="token punctuation">&#123;</span>
   value<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-size></nz-demo-input-size><h4 id="-">三种大小</h4>
 <p>我们为 <code>&lt;Input /&gt;</code> 输入框定义了三种尺寸（大、默认、小），高度分别为 <code>40px</code>、<code>32px</code> 和 <code>24px</code>。</p>
 <p>注意： 在表单里面，我们只使用大尺寸的输入框。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-size'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>example-input<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -57,93 +35,20 @@
   `</span></span><span class="token punctuation">,</span>
   <span class="token styles-string">styles  : [
       <span class="token css"><span class="token selector">`
-      <span class="token class">.example-input</span> <span class="token class">.ant-input</span> </span><span class="token punctuation">{</span>
+      <span class="token class">.example-input</span> <span class="token class">.ant-input</span> </span><span class="token punctuation">&#123;</span>
         <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
         <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token number">8</span>px <span class="token number">8</span>px <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token punctuation">&#125;</span>
     `</span>
   ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputSizeComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-icon></nz-demo-input-icon><h4 id="-">图标按钮</h4>
-<p>当需要在 <code>nz-button</code> 内嵌入图标时，可以直接在 <code>nz-button</code> 内嵌入对应的 <code>icon</code>。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-icon'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">nzShape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Search<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">nzShape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Search<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">nzShape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Search<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span> <span class="token attr-name">nzShape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Search<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-  `</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-    <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonIconComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-size></nz-demo-input-size><h4 id="-">按钮尺寸</h4>
-<p>按钮有大、中、小三种尺寸。</p>
-<p>通过设置 <code>nzSize</code> 为 <code>large</code> <code>small</code> 分别把按钮设为大、小尺寸。若不设置 <code>nzSize</code>，则尺寸为中。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-size'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-radio-group</span> <span class="token attr-name">[(ngModel)]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">nz-radio-button</span> <span class="token attr-name">nzValue</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>large<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Large<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">nz-radio-button</span> <span class="token attr-name">nzValue</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">nz-radio-button</span> <span class="token attr-name">nzValue</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>small<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Small<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-radio-group</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Dashed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>danger<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span> <span class="token attr-name">nzShape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-download<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-download<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Download<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-button-group</span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>size<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-left<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Backward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-button-group</span><span class="token punctuation">></span></span>
-  `</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-      <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-
-      <span class="token selector">nz-button-group <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonSizeComponent</span> <span class="token punctuation">{</span>
-  size <span class="token operator">=</span> <span class="token string">'large'</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputSizeComponent</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-addon></nz-demo-input-addon><h4 id="-">前置/后置标签</h4>
 <p>用于配置一些固定组合。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-addon'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -176,16 +81,16 @@
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-input-group</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
   `</span></span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputAddonComponent</span> <span class="token punctuation">{</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputAddonComponent</span> <span class="token punctuation">&#123;</span>
   inputValue<span class="token punctuation">:</span> <span class="token keyword">string</span> <span class="token operator">=</span> <span class="token string">'my site'</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-group></nz-demo-input-group><h4 id="-">输入框组合</h4>
 <p>输入框的组合展现。</p>
 <p>注意：使用 <code>nzCompact</code> 模式时，不需要通过 <code>nz-col</code> 来控制宽度。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-group'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-input-group</span> <span class="token attr-name">[nzSize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">'</span>large<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -261,116 +166,43 @@
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-cascader</span> <span class="token attr-name">[nzOptions]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">70%</span><span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-cascader</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-input-group</span><span class="token punctuation">></span></span>
   `</span></span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputGroupComponent</span> <span class="token punctuation">{</span>
-  options <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputGroupComponent</span> <span class="token punctuation">&#123;</span>
+  options <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
     value<span class="token punctuation">:</span> <span class="token string">'zhejiang'</span><span class="token punctuation">,</span>
     label<span class="token punctuation">:</span> <span class="token string">'Zhejiang'</span><span class="token punctuation">,</span>
-    children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
       value<span class="token punctuation">:</span> <span class="token string">'hangzhou'</span><span class="token punctuation">,</span>
       label<span class="token punctuation">:</span> <span class="token string">'Hangzhou'</span><span class="token punctuation">,</span>
-      children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
         value<span class="token punctuation">:</span> <span class="token string">'xihu'</span><span class="token punctuation">,</span>
         label<span class="token punctuation">:</span> <span class="token string">'West Lake'</span><span class="token punctuation">,</span>
         isLeaf<span class="token punctuation">:</span> <span class="token keyword">true</span>
-      <span class="token punctuation">}</span><span class="token punctuation">]</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
       value<span class="token punctuation">:</span> <span class="token string">'ningbo'</span><span class="token punctuation">,</span>
       label<span class="token punctuation">:</span> <span class="token string">'Ningbo'</span><span class="token punctuation">,</span>
       isLeaf<span class="token punctuation">:</span> <span class="token keyword">true</span>
-    <span class="token punctuation">}</span><span class="token punctuation">]</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
     value<span class="token punctuation">:</span> <span class="token string">'jiangsu'</span><span class="token punctuation">,</span>
     label<span class="token punctuation">:</span> <span class="token string">'Jiangsu'</span><span class="token punctuation">,</span>
-    children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
       value<span class="token punctuation">:</span> <span class="token string">'nanjing'</span><span class="token punctuation">,</span>
       label<span class="token punctuation">:</span> <span class="token string">'Nanjing'</span><span class="token punctuation">,</span>
-      children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
         value<span class="token punctuation">:</span> <span class="token string">'zhonghuamen'</span><span class="token punctuation">,</span>
         label<span class="token punctuation">:</span> <span class="token string">'Zhong Hua Men'</span><span class="token punctuation">,</span>
         isLeaf<span class="token punctuation">:</span> <span class="token keyword">true</span>
-      <span class="token punctuation">}</span><span class="token punctuation">]</span>
-    <span class="token punctuation">}</span><span class="token punctuation">]</span>
-  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-disabled></nz-demo-input-disabled><h4 id="-">不可用状态</h4>
-<p>添加 <code>disabled</code> 属性即可让按钮处于不可用状态，同时按钮样式也会改变。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-disabled'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>Primary(disabled)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>Default(disabled)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Dashed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>Dashed(disabled)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">8</span>px <span class="token number">8</span>px <span class="token number">0</span>px<span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">190</span>, <span class="token number">200</span>, <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzGhost</span><span class="token punctuation">></span></span>Ghost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzGhost</span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>Ghost(disabled)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>`</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-      <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonDisabledComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-loading></nz-demo-input-loading><h4 id="-">加载中状态</h4>
-<p>添加 <code>nzLoading</code> 属性即可让按钮处于加载状态，最后两个按钮演示点击后进入加载状态。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-loading'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">nzLoading</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-poweroff<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Loading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">nzSize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>small<span class="token punctuation">"</span></span> <span class="token attr-name">nzLoading</span><span class="token punctuation">></span></span>Loading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">(click)</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loadOne()<span class="token punctuation">"</span></span> <span class="token attr-name">[nzLoading]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>isLoadingOne<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Click me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">(click)</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loadTwo()<span class="token punctuation">"</span></span> <span class="token attr-name">[nzLoading]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>isLoadingTwo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-poweroff<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>Click me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzLoading</span> <span class="token attr-name">nzShape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzLoading</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">nzShape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-  `</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-    <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonLoadingComponent</span> <span class="token punctuation">{</span>
-  isLoadingOne <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
-  isLoadingTwo <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
-
-  <span class="token function">loadOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>isLoadingOne <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
-    <span class="token function">setTimeout</span><span class="token punctuation">(</span>_ <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>isLoadingOne <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token function">loadTwo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>isLoadingTwo <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
-    <span class="token function">setTimeout</span><span class="token punctuation">(</span>_ <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>isLoadingTwo <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-search-input></nz-demo-input-search-input><h4 id="-">搜索框</h4>
 <p>带有搜索按钮的输入框。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-search-input'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-input-group</span> <span class="token attr-name">nzSuffixIcon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -393,142 +225,48 @@
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">nzSize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>large<span class="token punctuation">"</span></span> <span class="token attr-name">nzSearch</span><span class="token punctuation">></span></span>Search<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-template</span><span class="token punctuation">></span></span>
   `</span></span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputSearchInputComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputSearchInputComponent</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-textarea></nz-demo-input-textarea><h4 id="-">文本域</h4>
 <p>用于多行输入。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-textarea'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>4<span class="token punctuation">"</span></span> <span class="token attr-name">nz-input</span> <span class="token attr-name">[(ngModel)]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>inputValue<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
   `</span></span><span class="token punctuation">,</span>
 
   styles<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputTextareaComponent</span> <span class="token punctuation">{</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputTextareaComponent</span> <span class="token punctuation">&#123;</span>
   inputValue<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-multiple></nz-demo-input-multiple><h4 id="-">多个按钮组合</h4>
-<p>按钮组合使用时，推荐使用1个主操作 + n 个次操作，3个以上操作时把更多操作放到 <code>nz-dropdown</code> 中组合使用。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-multiple'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-dropdown</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nz-dropdown</span><span class="token punctuation">></span></span>Actions<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-down<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">nz-menu</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">nz-menu-item</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span>1st item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">nz-menu-item</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span>2nd item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">nz-menu-item</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span>3rd item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-dropdown</span><span class="token punctuation">></span></span>
-  `</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-    <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonMultipleComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-autosize-textarea></nz-demo-input-autosize-textarea><h4 id="-">适应文本高度的文本域</h4>
 <p><code>nzAutosize</code> 属性适用于 <code>textarea</code> 节点，并且只有高度会自动变化。另外 <code>nzAutosize</code> 可以设定为一个对象，指定最小行数和最大行数。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-autosize-textarea'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">nz-input</span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Autosize height based on content lines<span class="token punctuation">"</span></span> <span class="token attr-name">nzAutosize</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin</span><span class="token punctuation">:</span><span class="token number">24</span>px <span class="token number">0</span><span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">nz-input</span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Autosize height with minimum and maximum number of lines<span class="token punctuation">"</span></span> <span class="token attr-name">[nzAutosize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>{ minRows: 2, maxRows: 6 }<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">nz-input</span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Autosize height with minimum and maximum number of lines<span class="token punctuation">"</span></span> <span class="token attr-name">[nzAutosize]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>&#123; minRows: 2, maxRows: 6 &#125;<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 
   `</span></span><span class="token punctuation">,</span>
 
   styles<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputAutosizeTextareaComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-button-group></nz-demo-input-button-group><h4 id="-">按钮组合</h4>
-<p>可以将多个 <code>nz-button</code> 放入 <code>nz-button-group</code> 的容器中。</p>
-<p>通过设置 <code>nzSize</code> 为 <code>large</code> <code>small</code> 分别把按钮组合设为大、小尺寸。若不设置 <code>nzSize</code>，则尺寸为中。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-button-group'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">></span></span>Basic<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-button-group</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span><span class="token punctuation">></span></span>Cancel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>OK<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-button-group</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-button-group</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>L<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>M<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>R<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-button-group</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-button-group</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>L<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>M<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>M<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>R<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-button-group</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">></span></span>With Icon<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-button-group</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-left<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span> Go back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Go forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-button-group</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-button-group</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-cloud<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-cloud-download<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nz-button-group</span><span class="token punctuation">></span></span>`</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-      <span class="token css"><span class="token selector">`
-      h4 </span><span class="token punctuation">{</span>
-        <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">16</span>px <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">14</span>px<span class="token punctuation">;</span>
-        <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-
-      <span class="token selector">h4<span class="token pseudo-class">:first-child</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-
-      <span class="token selector"><span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-
-      <span class="token selector">nz-button-group </span><span class="token punctuation">{</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonButtonGroupComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputAutosizeTextareaComponent</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-tooltip></nz-demo-input-tooltip><h4 id="-">输入时格式化展示</h4>
 <p>结合 <a href="/components/tooltip/zh">Tooltip</a> 组件，实现一个数值输入框，方便内容超长时的全量展现。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> ElementRef<span class="token punctuation">,</span> ViewChild<span class="token punctuation">,</span> ViewEncapsulation <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component<span class="token punctuation">,</span> ElementRef<span class="token punctuation">,</span> ViewChild<span class="token punctuation">,</span> ViewEncapsulation <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector     <span class="token punctuation">:</span> <span class="token string">'nz-demo-input-tooltip'</span><span class="token punctuation">,</span>
   encapsulation<span class="token punctuation">:</span> ViewEncapsulation<span class="token punctuation">.</span>None<span class="token punctuation">,</span>
   <span class="token template-string">template     : <span class="token html">`
@@ -538,70 +276,70 @@
   `</span></span><span class="token punctuation">,</span>
   <span class="token styles-string">styles       : [
       <span class="token css"><span class="token selector">`
-      <span class="token class">.numeric-input</span> <span class="token class">.ant-tooltip-inner</span> </span><span class="token punctuation">{</span>
+      <span class="token class">.numeric-input</span> <span class="token class">.ant-tooltip-inner</span> </span><span class="token punctuation">&#123;</span>
         <span class="token property">min-width</span><span class="token punctuation">:</span> <span class="token number">32</span>px<span class="token punctuation">;</span>
         <span class="token property">min-height</span><span class="token punctuation">:</span> <span class="token number">37</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token punctuation">&#125;</span>
 
-      <span class="token selector"><span class="token class">.numeric-input</span> <span class="token class">.numeric-input-title</span> </span><span class="token punctuation">{</span>
+      <span class="token selector"><span class="token class">.numeric-input</span> <span class="token class">.numeric-input-title</span> </span><span class="token punctuation">&#123;</span>
         <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">14</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token punctuation">&#125;</span>
 
     `</span>
   ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputTooltipComponent</span> <span class="token punctuation">{</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputTooltipComponent</span> <span class="token punctuation">&#123;</span>
   value <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
   title <span class="token operator">=</span> <span class="token string">'Input a number'</span><span class="token punctuation">;</span>
 
   @<span class="token function">ViewChild</span><span class="token punctuation">(</span><span class="token string">'inputElement'</span><span class="token punctuation">)</span> inputElement<span class="token punctuation">:</span> ElementRef<span class="token punctuation">;</span>
 
-  <span class="token function">onChange</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  <span class="token function">onChange</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">updateValue</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token punctuation">&#125;</span>
 
   <span class="token comment" spellcheck="true">// '.' at the end or only '-' in the input box.</span>
-  <span class="token function">onBlur</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'.'</span> <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">===</span> <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">onBlur</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'.'</span> <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">===</span> <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">updateValue</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
 
-  <span class="token function">updateValue</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  <span class="token function">updateValue</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">const</span> reg <span class="token operator">=</span> <span class="token regex">/^-?(0|[1-9][0-9]*)(\.[0-9]*)?$/</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isNaN</span><span class="token punctuation">(</span><span class="token operator">+</span>value<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">||</span> value <span class="token operator">===</span> <span class="token string">''</span> <span class="token operator">||</span> value <span class="token operator">===</span> <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isNaN</span><span class="token punctuation">(</span><span class="token operator">+</span>value<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">||</span> value <span class="token operator">===</span> <span class="token string">''</span> <span class="token operator">||</span> value <span class="token operator">===</span> <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+    <span class="token punctuation">&#125;</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span>inputElement<span class="token punctuation">.</span>nativeElement<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">updateTitle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token punctuation">&#125;</span>
 
-  <span class="token function">updateTitle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  <span class="token function">updateTitle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">!==</span> <span class="token string">'-'</span> <span class="token operator">?</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">formatNumber</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token string">'Input a number'</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token punctuation">&#125;</span>
 
-  <span class="token function">formatNumber</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">string</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> <span class="token keyword">string</span> <span class="token operator">=</span> `$<span class="token punctuation">{</span>value<span class="token punctuation">}</span>`<span class="token punctuation">;</span>
+  <span class="token function">formatNumber</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">string</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> <span class="token keyword">string</span> <span class="token operator">=</span> `$<span class="token punctuation">&#123;</span>value<span class="token punctuation">&#125;</span>`<span class="token punctuation">;</span>
     <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token keyword">string</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> prefix <span class="token operator">=</span> list<span class="token punctuation">[</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'-'</span> <span class="token operator">?</span> <span class="token string">'-'</span> <span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
     <span class="token keyword">let</span> num <span class="token operator">=</span> prefix <span class="token operator">?</span> list<span class="token punctuation">[</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> list<span class="token punctuation">[</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>num<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      result <span class="token operator">=</span> `<span class="token punctuation">,</span>$<span class="token punctuation">{</span>num<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">}</span>$<span class="token punctuation">{</span>result<span class="token punctuation">}</span>`<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>num<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      result <span class="token operator">=</span> `<span class="token punctuation">,</span>$<span class="token punctuation">&#123;</span>num<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>$<span class="token punctuation">&#123;</span>result<span class="token punctuation">&#125;</span>`<span class="token punctuation">;</span>
       num <span class="token operator">=</span> num<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> num<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
       result <span class="token operator">=</span> num <span class="token operator">+</span> result<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> `$<span class="token punctuation">{</span>prefix<span class="token punctuation">}</span>$<span class="token punctuation">{</span>result<span class="token punctuation">}</span>$<span class="token punctuation">{</span>list<span class="token punctuation">[</span> <span class="token number">1</span> <span class="token punctuation">]</span> <span class="token operator">?</span> `<span class="token punctuation">.</span>$<span class="token punctuation">{</span>list<span class="token punctuation">[</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">}</span>` <span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">}</span>`<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">return</span> `$<span class="token punctuation">&#123;</span>prefix<span class="token punctuation">&#125;</span>$<span class="token punctuation">&#123;</span>result<span class="token punctuation">&#125;</span>$<span class="token punctuation">&#123;</span>list<span class="token punctuation">[</span> <span class="token number">1</span> <span class="token punctuation">]</span> <span class="token operator">?</span> `<span class="token punctuation">.</span>$<span class="token punctuation">&#123;</span>list<span class="token punctuation">[</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">&#125;</span>` <span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">&#125;</span>`<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
 
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><nz-demo-input-presuffix></nz-demo-input-presuffix><h4 id="-">前缀和后缀</h4>
 <p>在输入框上添加前缀或后缀图标。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-input-presuffix'</span><span class="token punctuation">,</span>
   <span class="token template-string">template: <span class="token html">`
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nz-input-group</span> <span class="token attr-name">[nzSuffix]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>suffixTemplate<span class="token punctuation">"</span></span> <span class="token attr-name">nzPrefixIcon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anticon anticon-user<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -611,72 +349,26 @@
   `</span></span><span class="token punctuation">,</span>
   <span class="token styles-string">styles  : [
       <span class="token css"><span class="token selector">`
-      <span class="token class">.anticon-close-circle</span> </span><span class="token punctuation">{</span>
+      <span class="token class">.anticon-close-circle</span> </span><span class="token punctuation">&#123;</span>
         <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
         <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#ccc</span><span class="token punctuation">;</span>
         <span class="token property">transition</span><span class="token punctuation">:</span> color <span class="token number">0.3</span>s<span class="token punctuation">;</span>
         <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token punctuation">&#125;</span>
 
-      <span class="token selector"><span class="token class">.anticon-close-circle</span><span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>
+      <span class="token selector"><span class="token class">.anticon-close-circle</span><span class="token pseudo-class">:hover</span> </span><span class="token punctuation">&#123;</span>
         <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#999</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token punctuation">&#125;</span>
 
-      <span class="token selector"><span class="token class">.anticon-close-circle</span><span class="token pseudo-class">:active</span> </span><span class="token punctuation">{</span>
+      <span class="token selector"><span class="token class">.anticon-close-circle</span><span class="token pseudo-class">:active</span> </span><span class="token punctuation">&#123;</span>
         <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#666</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token punctuation">&#125;</span>
     `</span>
   ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputPresuffixComponent</span> <span class="token punctuation">{</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoInputPresuffixComponent</span> <span class="token punctuation">&#123;</span>
   username<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-ghost></nz-demo-input-ghost><h4 id="-">幽灵按钮</h4>
-<p>添加 <code>nzGhost</code> 属性后，幽灵按钮将其他按钮的内容反色，背景变为透明，常用在有色背景上。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-ghost'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">190</span>, <span class="token number">200</span>, <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">26</span>px <span class="token number">16</span>px <span class="token number">16</span>px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">nzGhost</span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">nzGhost</span><span class="token punctuation">></span></span>Default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span> <span class="token attr-name">nzGhost</span><span class="token punctuation">></span></span>Dashed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>danger<span class="token punctuation">"</span></span> <span class="token attr-name">nzGhost</span><span class="token punctuation">></span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  `</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-      <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonGhostComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
-</code></pre><nz-demo-input-block></nz-demo-input-block><h4 id="block-">Block 按钮</h4>
-<p><code>nzBlock</code> 属性将使按钮适合其父宽度。</p>
-<pre class="language-angular"><code class="language-angular"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
-
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  selector<span class="token punctuation">:</span> <span class="token string">'nz-demo-button-block'</span><span class="token punctuation">,</span>
-  <span class="token template-string">template: <span class="token html">`
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">nzBlock</span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span> <span class="token attr-name">nzBlock</span><span class="token punctuation">></span></span>Default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dashed<span class="token punctuation">"</span></span> <span class="token attr-name">nzBlock</span><span class="token punctuation">></span></span>Dashed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">nz-button</span> <span class="token attr-name">nzType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>danger<span class="token punctuation">"</span></span> <span class="token attr-name">nzBlock</span><span class="token punctuation">></span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>`</span></span><span class="token punctuation">,</span>
-  <span class="token styles-string">styles  : [
-      <span class="token css"><span class="token selector">`
-      <span class="token attribute">[nz-button]</span> </span><span class="token punctuation">{</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    `</span>
-  ]</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">NzDemoButtonBlockComponent</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#125;</span>
 </code></pre><h2 id="api">API</h2>
 <h3 id="-nz-input-">[nz-input]</h3>
 <p>nz-input 可以使用所有的W3C标准下的所有 <a href="https://www.w3schools.com/tags/tag_input.asp">使用方式</a> 和 Angular对 input 的全部额外功能支持。</p>
@@ -691,8 +383,8 @@
 </thead>
 <tbody><tr>
 <td><code>[nzAutosize]</code></td>
-<td>只可以用于 <code>textarea</code>，自适应内容高度，可设置为 <code>boolean</code> 或对象：<code>{ minRows: 2, maxRows: 6 }</code></td>
-<td>boolean丨 <code>{ minRows: number, maxRows: number }</code></td>
+<td>只可以用于 <code>textarea</code>，自适应内容高度，可设置为 <code>boolean</code> 或对象：<code>&#123; minRows: 2, maxRows: 6 &#125;</code></td>
+<td>boolean丨 <code>&#123; minRows: number, maxRows: number &#125;</code></td>
 <td>false</td>
 </tr>
 <tr>
@@ -721,7 +413,7 @@
 <tr>
 <td><code>[nzAddOnAfterIcon]</code></td>
 <td>后置标签按钮，<code>nzAddOnAfter</code>的快捷使用方式</td>
-<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 { [klass: string]: any; }</code></td>
+<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 &#123; [klass: string]: any; &#125;</code></td>
 <td>-</td>
 </tr>
 <tr>
@@ -733,7 +425,7 @@
 <tr>
 <td><code>[nzAddOnBeforeIcon]</code></td>
 <td>前置标签按钮，<code>nzAddOnBefore</code>的快捷使用方式</td>
-<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 { [klass: string]: any; }</code></td>
+<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 &#123; [klass: string]: any; &#125;</code></td>
 <td>-</td>
 </tr>
 <tr>
@@ -745,7 +437,7 @@
 <tr>
 <td><code>[nzPrefixIcon]</code></td>
 <td>前缀图标，<code>nzPrefix</code>的快捷使用方式</td>
-<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 { [klass: string]: any; }</code></td>
+<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 &#123; [klass: string]: any; &#125;</code></td>
 <td>-</td>
 </tr>
 <tr>
@@ -757,7 +449,7 @@
 <tr>
 <td><code>[nzSuffixIcon]</code></td>
 <td>后缀图标，<code>nzSuffix</code>的快捷使用方式</td>
-<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 { [klass: string]: any; }</code></td>
+<td><code>string 丨 string[] 丨 Set&lt;string&gt; 丨 &#123; [klass: string]: any; &#125;</code></td>
 <td>-</td>
 </tr>
 <tr>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ROUTER_LIST } from './router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  routerList = ROUTER_LIST;
 }

@@ -1,3 +1,4 @@
+/* entryComponents: NzDemoButtonBasicComponent */
 import { Component } from '@angular/core';
 
 @Component({

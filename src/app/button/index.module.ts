@@ -22,7 +22,7 @@ import { NzDemoButtonBlockComponent} from './block';
         ])
     ],
     declarations: [
-        		NzDemoButtonComponent,
+        NzDemoButtonComponent,
 	NzDemoButtonBasicComponent,
 	NzDemoButtonIconComponent,
 	NzDemoButtonSizeComponent,
@@ -35,8 +35,9 @@ import { NzDemoButtonBlockComponent} from './block';
 
     ],
     entryComponents: [
+        NzDemoButtonBasicComponent
     ]
 })
-export class NgDemoButtonModule {
+export class NzDemoButtonModule {
 
 }

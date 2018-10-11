@@ -1,6 +1,6 @@
-# NgDocPackage
+# NgDocBuilder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+一个自动化打包生成angular组件文档的项目，灵感来自NG-ZORRO
 
 ## Development server
 

@@ -18,6 +18,6 @@ import { ShareModule } from '../share/share.module';
         {{entryComponents}}
     ]
 })
-export class NgDemo{{component}}Module {
+export class NzDemo{{component}}Module {
 
 }

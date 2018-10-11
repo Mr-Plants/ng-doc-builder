@@ -1,6 +1,6 @@
 ---
 title: Button
-other: test
+chinese: 按钮
 ---
 
 # Button 按钮

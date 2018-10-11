@@ -1,17 +1,30 @@
 <nz-layout class="layout">
-    <nz-header>
-        <h1 class="logo">Angular组件库</h1>
-    </nz-header>
+  <nz-header>
+    <h1 class="logo">Angular组件库</h1>
+  </nz-header>
+  <nz-layout>
+    <nz-sider [nzWidth]="200" style="background:#fff">
+      <ul nz-menu [nzMode]="'inline'" style="height:100%">
+        <li nz-menu-item routerLinkActive="ant-menu-item-selected">贷后组件库</li>
+        <li nz-menu-item>快速上手</li>
+
+        <li nz-submenu [nzOpen]="true">
+          <span title>Components</span>
+          <ul>
+            <li nz-menu-item routerLinkActive="ant-menu-item-selected" *ngFor="let route of routerList">
+              <a routerLink="{{route.path}}">
+                <span>{{route.label}}</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </nz-sider>
     <nz-layout>
-        <nz-sider [nzWidth]="200" style="background:#fff">
-            <ul nz-menu [nzMode]="'inline'" style="height:100%">
-                <li nz-menu-item>button</li>
-                <li nz-menu-item>input</li>
-                <li nz-menu-item>tootip</li>
-            </ul>
-        </nz-sider>
-        <nz-layout style="padding:15px">
-            <nz-content style="background:#fff; padding: 15px;">Content</nz-content>
-        </nz-layout>
+      <nz-content style="background:#fff; padding: 24px;">
+        <router-outlet></router-outlet>
+      </nz-content>
     </nz-layout>
+  </nz-layout>
 </nz-layout>
