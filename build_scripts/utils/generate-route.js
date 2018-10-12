@@ -28,3 +28,4 @@ module.exports = function generateRoute(data) {
 function componentName(component) {
   return camelCase(capitalizeFirstLetter(component));
 }
+// TODO 对route排序
