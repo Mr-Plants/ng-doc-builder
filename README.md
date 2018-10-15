@@ -1,6 +1,6 @@
 # NgDocBuilder
 
-一个自动化打包生成angular组件文档的项目，灵感来自NG-ZORRO.
+一个自动化打包生成angular组件文档的项目，灵感来自NG-ZORRO。
 
 ## Development server
 
